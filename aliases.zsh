@@ -16,6 +16,6 @@ alias zshdir="cd ~/.config/zsh"
 alias starshipdir="cd ~/.config/starship"
 alias neofetchdir="cd ~/.config/neofetch"
 
-alias docs="cd /home/dfeng/documents"
+alias docs="cd ~/Documents"
 
 
