@@ -5,7 +5,7 @@ eval "$(starship init zsh)"
 # eval "$(direnv hook zsh)"
 
 # Initialize homebrew
-# eval "$(/opt/homebrew/bin/brew shellenv)"
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Aliases
 source ~/.config/zsh/aliases.zsh
@@ -21,3 +21,4 @@ export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+

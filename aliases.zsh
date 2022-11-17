@@ -1,5 +1,3 @@
-# Aliases
-
 alias v="nvim"
 alias aliases="v ~/.config/zsh/aliases.zsh"
 
@@ -17,5 +15,7 @@ alias starshipdir="cd ~/.config/starship"
 alias neofetchdir="cd ~/.config/neofetch"
 
 alias docs="cd ~/Documents"
+alias projs="cd ~/Documents/projects"
+alias work="cd ~/Documents/work"
 
 
