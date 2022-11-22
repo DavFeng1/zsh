@@ -4,7 +4,6 @@ eval "$(starship init zsh)"
 # Initalize direnv
 eval "$(direnv hook zsh)"
 
-
 # Aliases
 source ~/.config/zsh/aliases.zsh
 
