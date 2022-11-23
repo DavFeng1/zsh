@@ -4,6 +4,9 @@ eval "$(starship init zsh)"
 # Initalize direnv
 eval "$(direnv hook zsh)"
 
+# Homebrew
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
 # Aliases
 source ~/.config/zsh/aliases.zsh
 
