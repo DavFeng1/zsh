@@ -17,5 +17,5 @@ alias starshipdir="cd ~/.config/starship"
 alias neofetchdir="cd ~/.config/neofetch"
 
 alias docs="cd ~/Documents"
-
+alias be="cd ~/Documents/shake-hosted-wallet"
 
