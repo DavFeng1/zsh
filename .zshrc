@@ -15,8 +15,9 @@ source ~/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Work related
-source ~/.config/zsh/work/devops-tools.zsh
+# source ~/.config/zsh/work/devops-tools.zsh
 
+source $DEVOPS_TOOLS_DIR/toolsrc
 
 # Use homebrew instal of ruby
 if [ -d "/opt/homebrew/opt/ruby/bin" ]; then
