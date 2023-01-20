@@ -1,3 +1,15 @@
+# Env vars
+export DEVOPS_TOOLS_DIR=$HOME/Documents/devops-tools
+export STARSHIP_CONFIG=~/.config/starship/starship.toml
+export KUBECONFIG_DIR=~/.config/kubernetes/
+export XDG_CONFIG_HOME=~/.config/
+export QA_DB_REMOTE_PORT=15432
+export QA_REPORTING_DB_REMOTE_PORT=15433
+export QA2_DB_REMOTE_PORT=15432
+export QA2_REPORTING_DB_REMOTE_PORT=15433
+
+export PATH=/opt/homebrew/opt/openssl@1.1/bin:/opt/homebrew/bin:$PATH
+
 # Initialize starship
 eval "$(starship init zsh)"
 
@@ -15,15 +27,7 @@ source ~/.config/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source ~/.config/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Work related
-# source ~/.config/zsh/work/devops-tools.zsh
-
 source $DEVOPS_TOOLS_DIR/toolsrc
-
-# Use homebrew instal of ruby
-if [ -d "/opt/homebrew/opt/ruby/bin" ]; then
-  export PATH=/opt/homebrew/opt/ruby/bin:$PATH
-  export PATH=`gem environment gemdir`/bin:$PATH
-fi
 
 # This will separate NPM & NVM between x86 and arm64, to avoid mixing package and dependency architectures (recipe for disaster)
 export npm_config_cache="$HOME/.npm/$(arch)"
