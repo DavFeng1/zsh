@@ -1,4 +1,5 @@
 # Env vars
+export PATH=/opt/homebrew/opt/openssl@1.1/bin:/opt/homebrew/bin:$PATH
 export DEVOPS_TOOLS_DIR=$HOME/Documents/devops-tools
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
 export KUBECONFIG_DIR=~/.config/kubernetes/
@@ -7,8 +8,14 @@ export QA_DB_REMOTE_PORT=15432
 export QA_REPORTING_DB_REMOTE_PORT=15433
 export QA2_DB_REMOTE_PORT=15432
 export QA2_REPORTING_DB_REMOTE_PORT=15433
+export AWS_CA_BUNDLE=$(brew --prefix)/etc/ca-certificates/cert.pem
+export AWS_VAULT_PROMPT=ykman
 
-export PATH=/opt/homebrew/opt/openssl@1.1/bin:/opt/homebrew/bin:$PATH
+# Android
+export ANDROID_SDK_ROOT=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
+export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
+export JAVA_HOME=$(/usr/libexec/java_home)
 
 # Initialize starship
 eval "$(starship init zsh)"

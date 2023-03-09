@@ -19,3 +19,7 @@ alias neofetchdir="cd ~/.config/neofetch"
 alias docs="cd ~/Documents"
 alias be="cd ~/Documents/shake-hosted-wallet"
 
+benchmark () {
+   ts '[%Y-%m-%d %H:%M:%S]'
+}
+
