@@ -16,6 +16,6 @@ alias neofetchdir="cd ~/.config/neofetch"
 
 alias docs="cd ~/Documents"
 alias projs="cd ~/Documents/projects"
-alias work="cd ~/Documents/work"
+alias notes="cd ~/Documents/notes"
 
 

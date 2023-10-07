@@ -2,7 +2,7 @@
 eval "$(starship init zsh)"
 
 # Initalize direnv
-# eval "$(direnv hook zsh)"
+eval "$(direnv hook zsh)"
 
 # Initialize homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
@@ -24,6 +24,10 @@ export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/shims:$PATH"
+
+# For python - C compilation openBlas
+export LDFLAGS="-L/opt/homebrew/opt/openblas/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/openblas/include"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
