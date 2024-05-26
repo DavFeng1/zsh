@@ -1,4 +1,5 @@
 alias v="nvim"
+alias g="git"
 alias aliases="v ~/.config/zsh/aliases.zsh"
 
 # Open config
