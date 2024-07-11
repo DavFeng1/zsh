@@ -7,9 +7,6 @@ eval "$(direnv hook zsh)"
 # Initialize homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-# Initialize pyenv
-if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
-
 # Aliases
 source ~/.config/zsh/aliases.zsh
 
