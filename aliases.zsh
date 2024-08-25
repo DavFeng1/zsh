@@ -19,10 +19,6 @@ alias starshipdir="cd ~/.config/starship"
 alias neofetchdir="cd ~/.config/neofetch"
 
 alias docs="cd ~/Documents"
-alias be="cd ~/Documents/shake-hosted-wallet"
-alias fe="cd ~/Documents/shaketh"
-alias web="cd ~/Documents/shake-web"
-alias sb="cd ~/Documents/shakeboard"
 
 benchmark () {
    ts '[%Y-%m-%d %H:%M:%S]'
