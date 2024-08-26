@@ -8,7 +8,7 @@ export XDG_CONFIG_HOME=~/.config/
 eval "$(starship init zsh)"
 
 # Initialize direnv
-eval "$(direnv hook zsh)"
+# eval "$(direnv hook zsh)"
 
 # Aliases
 source ~/.config/zsh/aliases.zsh
@@ -23,4 +23,16 @@ export npm_config_cache="$HOME/.npm/$(arch)"
 export NVM_DIR="$HOME/.nvm/$(arch)"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && . "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && . "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+# pnpm
+export PNPM_HOME="/Users/feng/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
 
