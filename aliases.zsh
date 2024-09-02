@@ -18,6 +18,9 @@ alias zshdir="cd ~/.config/zsh"
 alias starshipdir="cd ~/.config/starship"
 alias neofetchdir="cd ~/.config/neofetch"
 
+alias fpdir="cd ~/Documents/first-principles/"
+alias dadir="cd ~/Documents/data-analysis/"
+
 alias docs="cd ~/Documents"
 
 benchmark () {
