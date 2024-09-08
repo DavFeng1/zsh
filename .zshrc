@@ -38,3 +38,5 @@ eval "$(pyenv init -)"
 
 # postgres
 export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
+
+export PATH="$HOME/.elan/bin:$PATH"
