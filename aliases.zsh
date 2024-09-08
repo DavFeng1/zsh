@@ -18,10 +18,16 @@ alias zshdir="cd ~/.config/zsh"
 alias starshipdir="cd ~/.config/starship"
 alias neofetchdir="cd ~/.config/neofetch"
 
-alias fpdir="cd ~/Documents/first-principles/"
-alias dadir="cd ~/Documents/data-analysis/"
+if uname -r | grep -q "Darwin" ; then
+  alias fpdir="cd ~/Documents/first-principles/"
+  alias dadir="cd ~/Documents/data-analysis/"
+  alias docs="cd ~/Documents"
+else
+  alias fpdir="cd ~/documents/first-principles/"
+  alias dadir="cd ~/documents/data-analysis/"
+  alias docs="cd ~/documents"
+fi
 
-alias docs="cd ~/Documents"
 
 benchmark () {
    ts '[%Y-%m-%d %H:%M:%S]'
